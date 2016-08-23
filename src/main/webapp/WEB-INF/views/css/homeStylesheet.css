@@ -1,0 +1,17 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+
+#headerWrap img {
+
+}
+
+#headerWrap ul {
+	
+}
+
+#mainWrap create:hover{
+	content: url('../image/create_hover.png');
+}
+
+#mainWrap reply:hover{
+	content: url('../image/reply_hover.png');
+}
