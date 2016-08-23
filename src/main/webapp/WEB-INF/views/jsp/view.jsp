@@ -6,8 +6,8 @@
 <html lang="ko">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>QueryFly/add1.jsp</title>
-	<link rel="stylesheet" type="text/css" href="addStylesheet.css">
+	<title>QueryFly/view.jsp</title>
+	<link rel="stylesheet" type="text/css" href="introStylesheet.css">
 </head>
 <body>
 
@@ -23,18 +23,18 @@
 </div>
 
 <div id="viewWrap" >
-	<div id="Add1"> <!-- Add1 Start-->
-		<p align="center">Add Step.1</p>
+	<div id="Outline"> <!-- Outline Start-->
 		<table width="450" bgcolor="lightgray"align="center">
 			<tr>
 				<td width="0">&nbsp;</td>
 				<td width="370">No. <%/*parameter*/%></td>
+				<td width="25"><%/*parameter*/%></td>	<!-- 진행중/마감 -->
 				<td width="0">&nbsp;</td>
 			</tr>
 			<tr height="1" bgcolor="black"><td colspan="4" width="407"></td></tr>
 			<tr>
 				<td width="0">&nbsp;</td>
-				<td cols="2" width="395">제목 : <input type="text" name="title" cols="50" maxlength="30" required/></td>
+				<td cols="2" width="395">제목 : <%/*parameter*/%></td>
 				<td width="0">&nbsp;</td>
 			</tr>
 			<tr height="1" bgcolor="black"><td colspan="4" width="407"></td></tr>
@@ -52,35 +52,62 @@
 			<tr height="1" bgcolor="black"><td colspan="4" width="407"></td></tr>
 			<tr>
 				<td width="0">&nbsp;</td>
-				<td cols="2" width="395">한줄소개 : <input type="text" name="overview"/></td>
-				<td width="0">&nbsp;</td>
-			</tr>
-			<tr height="1" bgcolor="black"><td colspan="4" width="407"></td></tr>
-			<tr>
-				<td width="0">&nbsp;</td>
-				<td cols="2" width="395">결과 공개 여부 
-					<label><input type="radio" name="chk_public" value="공개" checked/>공개</label>
-					<label><input type="radio" name="chk_public" value="비공개"/>비공개</label></td>
-				<td width="0">&nbsp;</td>
-			</tr>
-			<tr height="1" bgcolor="black"><td colspan="4" width="407"></td></tr>
-			<tr>
-				<td width="0">&nbsp;</td>
-				<td cols="2" width="395">비밀번호 : <input type="password" name="password"/></td>
+				<td cols="2" width="395">한줄소개 : <%/*parameter*/%></td>
 				<td width="0">&nbsp;</td>
 			</tr>
 			<tr height="1" bgcolor="black"><td colspan="4" width="407"></td></tr>
 			<tr align="right">
 				<td width="0">&nbsp;</td>
 				<td colspan="2" width="399">
-					<input type=button value="다음">
+					<input type=button value="수정">	<!-- alert to add PW-->
+					<input type=button value="삭제">	<!-- alert to add PW-->
 				<td width="0">&nbsp;</td>
 			</tr>
+		</table>
+	</div> <!-- Outline End-->
+
+	<div id="Form">
+		<table align="center">
 			<tr>
-				<td></td>
+				<td>
+					<div id="formHeader">	<!-- Form-header Start -->
+						<ul>
+							<li>설문 참여</li>
+							<li>결과 보기</li>
+						</ul>	<!-- TODO: 링크 복사 추가해야함. -->
+					</div>	<!-- Form-header End -->
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table>	<!-- Form Start -->
+						<tr>
+							<td>
+								<form action="" method="get">
+									<table width="450" bgcolor="lightgray">
+										<tr>
+											<td>
+											</td>
+										</tr>
+										<tr>
+											<td>
+											</td>
+										</tr>
+
+									</table>
+									<table align="center">
+										<tr>
+											<td width="0"><input type="submit" value="플라이 보내기"/></td>
+										</tr>
+									</table>
+								</form>
+							</td>
+						</tr>
+					</table>	<!-- Form End -->
+				</td>
 			</tr>
 		</table>
-	</div> <!-- Add1 End-->
+	</div>
 </div>
 
 </body>

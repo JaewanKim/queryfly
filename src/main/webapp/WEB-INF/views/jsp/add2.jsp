@@ -6,7 +6,7 @@
 <html lang="ko">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>QueryFly/add1.jsp</title>
+	<title>QueryFly/add2.jsp</title>
 	<link rel="stylesheet" type="text/css" href="addStylesheet.css">
 </head>
 <body>
